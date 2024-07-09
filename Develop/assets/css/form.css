@@ -17,12 +17,11 @@ aside {
   align-items: center;
 }
 
-aside, 
-section {
+aside section {
   flex: 1 1 50%;
 }
 
-aside > h2 {
+aside h2 {
   font-size: 4rem;
   color: white;
   text-shadow: 1px 1px 1px var(--dark-accent);
@@ -34,7 +33,7 @@ form {
   position: relative;
 }
 
-form > *:not(label) {
+form  *:not(label) {
   margin: 1rem 0;
   padding: 0.5rem;
 }
@@ -64,7 +63,6 @@ input[type=submit]:hover {
   background-color: var(--dark-accent-action);
 }
 
-input,
 textarea {
   border-radius: 4px;
   border-width: 1px;

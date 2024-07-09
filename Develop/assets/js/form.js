@@ -1,6 +1,21 @@
-// TODO: Create a variable that selects the form element
+const usernameInput = document.querySelector('#username');
+const titleInput = document.querySelector('#title');
+const contentInput = document.querySelector('#content');
+const enterButton = document.querySelector('#enter');
 
 // TODO: Create a function that handles the form submission. Grab the form data and store it in local storage, then redirect to the blog page using the redirectPage function. If the form is submitted with missing data, display an error message to the user.
+
+enterButton.addEventListener('click', function (event) {
+  event.preventDefault();
+
+const user = {
+  username: usernameInput.value.trim(),
+  title: titleInput.value.trim(),
+  content: contentInput.value.trim(),
+};
+
+localStorage.setItem('user', JSON.stringify(user));
+});
 
 let redirectURL = '';
 
